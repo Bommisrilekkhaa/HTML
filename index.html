@@ -1,0 +1,225 @@
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Resort</title>
+  </head>
+  <body onload="welcome()">
+    
+    <script>
+      function welcome(){
+        window.alert("Welcome to Mooddddie Resort");
+      }
+      function mouseMove() {
+        document.getElementById("text").style.color = "turquoise";
+        document.getElementById("text").innerHTML = "Mooddddie Resort";
+      }
+      function clk(){
+        document.getElementById("sub").innerHTML="Submitted Successfully" ;
+      }
+  
+      function mouseOut() {
+        document.getElementById("text").style.color = "black";
+        document.getElementById("text").innerHTML = "Mooddddie Resort";
+      }
+      window.addEventListener( "load", start, false );
+function start()
+{
+document.getElementById("exampleInputName1").addEventListener("focus",focusone, false );
+document.getElementById("exampleInputName1").addEventListener("blur", blurone, false );
+document.getElementById("exampleInputphoneNumber1").addEventListener("focus",focusonei, false );
+document.getElementById("exampleInputphoneNumber1").addEventListener("blur", bluronei, false );
+document.getElementById("myform").addEventListener("submit",subfun, false );
+document.getElementById("myform").addEventListener("reset",resetfun, false );
+}
+
+function focusone() {document.getElementById("exampleInputName1").style.backgroundColor="turquoise";}
+function blurone() { document.getElementById("exampleInputName1").style.backgroundColor="pink";}
+function focusonei() {document.getElementById("exampleInputphoneNumber1").style.backgroundColor="turquoise";}
+function bluronei() { document.getElementById("exampleInputphoneNumber1").style.backgroundColor="pink";}
+function subfun() 
+{ window.alert("Are Sure to submit");
+  window.alert("Thank you");
+}
+function resetfun() {window.alert("Are Sure to reset")}
+
+    </script>
+    <section class="section-intro">
+      <!-- <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+         
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                  <span class="icon-bar"></span>
+            <span class="avbar-toggler-icon"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+    
+            </div>
+        
+    
+             <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                <span class="navbar-toggler-icon"></span>
+                  <li class="active"><a href="#">About</a></li>
+                  <li class="active"><a href="#">Reservation</a></li>
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Page 1-1</a></li>
+                          <li><a href="#">Page 1-2</a></li>
+                          <li><a href="#">Page 1-3</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                  <li class="active"><a href="#">Gallery</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+         -->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+          <a class="navbar-brand" href="#">Mooddddie Resort</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about" >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html" >Reservation</a>
+              </li>
+              <li class="nav-item1">
+                <a class="nav-link" href="#menu" id="men">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shop">Gallery</a>
+              </li>
+            </ul>
+         
+          </div>
+        </nav>
+      
+    <header>
+      <h1 id="text" onmousemove="mouseMove()" onmouseout="mouseOut()">Mooddddie Resort</h1>
+    </header>
+    <div class="link-to-book-wrapper">
+      <a class="btn btn-outline-light" href="booking.html">Book for your Vacation</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <article>
+      <center>
+      <h3>
+          Luxurious Sea-side Resort
+      </h3>
+    </center>
+      <p>
+        Welcome to Mooddddie Resort. It is a sea-side resort with luxurious living rooms,
+        the scenic beauty of the resort attracts all the tourists. It actually resembles 
+        the beauty of a country-side hotel.
+      </p>
+    </article>
+  </section>
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/rachel-park-hrlvr2ZlUNk-unsplash.jpg" class="d-block w-100" alt="food">
+      </div>
+      <div class="carousel-item">
+        <img src="img/lily-banse--YHSwy6uqvk-unsplash.jpg" class="d-block w-100" alt="food">
+      </div>
+      <div class="carousel-item">
+        <img src="img/brooke-lark-aGjP08-HbYY-unsplash.jpg" class="d-block w-100" alt="food">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row-flex">
+      <div class="flex-column-form">
+        <h3>
+          Make a booking
+        </h3>
+      <form id="myform" class="media-centered">
+          <div class="form-group">
+            <p>
+              Please leave your number we will call to make a reservation
+            </p>
+            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
+          </div>
+          <button type="submit" id="sub" class="btn btn-outline-info" onclick="clk()">Submit</button>
+          <button type="reset" id="reset" class="btn btn-outline-info">Reset</button>
+        </form>
+      </div>
+      <div class="opening-time">
+        <h3>
+          Opening times
+        </h3>
+      
+          <table border="thin">
+          <tr>
+            <th style="padding:5">Day</th>
+            <th style="padding:5">Time</th>
+          </tr>
+          <tr>
+         <td style="padding:5">Monday—Thursday </td>
+         <td style="padding:5">08:00 — 22:00</td>
+        </tr>
+         <tr>
+         <td style="padding:5">Friday—Saturday</td>
+          <td style="padding:5">09:00 — 23:00 </td>
+        </tr>
+         <tr>
+          <td style="padding:5">Sunday</td>
+          <td style="padding:5">10:00 — 17:00</td>
+
+         </tr>
+        </table>
+        
+      </div>
+      <div class="contact-adress">
+        <h3>
+          Contact
+        </h3>
+        <p>
+          <span>99, Stella Avenue</span>
+          <span>New city road</span>
+          <span>Banglore</span>
+          <span>+91 8431966119</span>
+        </p>
+      </div>
+    </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+  </body>
+  
+</html> 
