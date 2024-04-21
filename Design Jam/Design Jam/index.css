@@ -1,0 +1,47 @@
+body{
+    background-color: #0B1D26;
+}
+
+.hike{
+    margin-top: 2rem;
+    width: 400px;
+    height: 500px;
+    margin-right: 4rem;
+}
+
+.number{
+    font-size: 5rem;
+    color: rgba(169, 169, 169,0.1);
+    position: absolute;
+    left: 5px;
+}
+
+.main{
+    display: flex;;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.h2size{
+    font-size: medium;
+}
+
+.subdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.word{
+    color: #F6AB08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size{
+    color: white;
+    font-size: x-large;
+}

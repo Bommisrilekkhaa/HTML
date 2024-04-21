@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        p{
+            animation-name: siren;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.075, 0.082, 0.165, 0.75) ;
+        }
+        @keyframes siren{
+            0%{
+                color:pink;
+                font-size: xx-small;
+            }
+            25%{
+                color:red;
+            }
+            50%
+            {
+                color:green;
+            }
+            100%{
+                color:blue;
+                font-size: xx-large;
+                font-size: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Bommisrilekkhaa</p>
+</body>
+</html>
