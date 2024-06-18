@@ -1,0 +1,33 @@
+body{
+    
+	margin: 0;
+	font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(#fff ,#99e5e8);
+
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+button{
+    color: #3b3d3d;
+	background: #b5e5f6;
+	margin:25px 84px;
+	padding:15px;
+	width:250px;
+	border-radius: 10px;
+	box-shadow: 4px 1px 4px 1px #c1effd;
+	font-size:18px;
+}
+button:hover{
+	background: #15b6f1;
+}
+
+.container{
+    background: #fff;
+	border-radius:40px;
+    border: 20px;
+    padding: 20px;
+    margin: 50px 450px 50px 450px;
+    box-shadow: 4px 1px 4px 1px #b0aeae;
+}

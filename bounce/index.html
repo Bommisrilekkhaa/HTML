@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            margin: 5px;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-fill-mode: linear;
+        }
+        .frame{
+            background-color: rgb(191, 190, 190);
+            margin: 150px;
+            border: white;
+            height:300px;
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            background-color: rgb(82, 82, 82);
+        }
+        @keyframes bounce{
+            0%{
+                margin-top: 0px;
+            }
+            20%{
+                margin-top: 30px;
+            }
+            40%{
+                margin-top: 200px;
+            }
+            60%{
+                margin-top: 90px;
+            }
+            80%{
+                margin-top: 40px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="frame">
+            <div class="ball"></div>
+        </div>
+</body>
+
+</html>
